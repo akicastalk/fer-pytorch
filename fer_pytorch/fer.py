@@ -141,7 +141,7 @@ class FER:
                             },
                         }
                     )
-                self.visualize(frame, [x, y, w, h], EMOTION_DICT[probs[0].argmax()], np.amax(probs[0]))
+                # self.visualize(frame, [x, y, w, h], EMOTION_DICT[probs[0].argmax()], np.amax(probs[0]))
         else:
             warnings.warn("No faces detected!")
         if path_to_output is not None:
