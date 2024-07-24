@@ -143,7 +143,8 @@ class FER:
                     )
                 # self.visualize(frame, [x, y, w, h], EMOTION_DICT[probs[0].argmax()], np.amax(probs[0]))
         else:
-            warnings.warn("No faces detected!")
+            #warnings.warn("No faces detected!")
+            pass
         if path_to_output is not None:
             cv2.imwrite(path_to_output, frame)
         return result_list
